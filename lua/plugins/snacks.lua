@@ -136,6 +136,7 @@ return {
                 },
                 preset = {
                     keys = {
+                        { icon = '󰈔', key = 'n', desc = { 'New file', hl = 'normal' }, action = ':enew' },
                         { icon = Common.icons.ui.explorer, key = 'e', desc = { 'Explorer', hl = 'normal' }, action = function () require('neo-tree.command').execute({}) end },
                         { icon = '󰦛 ', key = 'r', desc = { 'Recent', hl = 'normal' }, action = ':lua Snacks.dashboard.pick(\'oldfiles\')' },
                         { icon = Common.icons.ui.floppy, key = 's', desc = { 'Session', hl = 'normal' }, action = ':lua require(\'persistence\').load({ last = true })' },
